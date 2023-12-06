@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap" rel="stylesheet">
+<body>
+
+    <div class="wrapper">
+
+        <!-- upper text -->
+
+        <h1 class="header" data-weather-forecast>
+            WEATHER FORECAST
+        </h1>
+
+        <div class="tab-container">
+            <p class="tab"  id="current-location">Your Location</p>
+            <p class="tab"  id="search">Search City</p>
+        </div>
+
+        <!-- grant location  -->
+        <div class= "sub-containt location-access">
+            <img src="images/location.png" height="70" width="70">
+            <p>Grant Location</p>
+            <p>Allow Access To Get Weather information</p>
+            <button class="btn" type="submit" data-grant-access>Grant Permission</button>
+
+        </div>
+
+        <!-- loading page -->
+
+        <div class="sub-containt loading">
+            <img src="images/loading.gif" height="45" width="45" loading="lazy" id="loader">
+            <p id="loaderData">Loading Weather</p>
+        </div>
+
+        <!-- search city -->
+        <form class=" searchbar form-cont" data-search>
+            <input id="cityInput" type="text" placeholder="Search Weather Of Any City" data-city>
+            <img src="images/search.png" height="20" width="20" loading="lazy" id="loadsearch">
+        </form>
+
+        <!-- weather information -->
+
+        <div class="weatherData weather-information">
+            
+            <div class="city-name">
+                <p id="city" data-ctyName> </p>
+                <img data-contFlag>
+            </div>
+            
+            <p  id="dataofweather"  data-weather> </p>
+
+            <img id="picdata" data-currentWeather>
+
+            <h2 id="temp" data-temp> </h2>
+
+            <div class="weatherCard">
+
+                <div class="card" id="wind">
+                    <img src="images/wind.png">
+                    <p>Wind Speed</p>
+                    <p data-wind> </p>
+                </div>
+
+                <div class="card" id="humidity">
+                    <img src="images/humidity.png">
+                    <p>Humidity</p>
+                    <p data-humidity> </p>
+                </div>
+
+                <div class="card" id="cloud">
+                    <img src="images/cloud.png">
+                    <p>Cloud</p>
+                    <p data-cloud> </p>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+    <script src="script .js"></script>
+</body>
+</html>
